@@ -137,12 +137,10 @@ class genericCtrl{
 		  
 		  List<Favourite> user = new ArrayList<Favourite>();
 	      for(Favourite user1 : favouriteRepository.findAll()) {
-	    	if(user1.equals(teamName)) {
-	    		System.out.println("already selected");
-	    	}
-	    	else {
+	    	
+	 
 	        user.add(user1);
-	    	}
+	    	
 	         // System.out.println("eee");
 	        // favouriteRepository.save(user); 
 	      }

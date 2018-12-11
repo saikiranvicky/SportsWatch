@@ -213,7 +213,7 @@ public class MainController {
 	
 	@GetMapping("/index")
 	public ModelAndView getScores(HttpSession session) {
-		String teamName = session.getAttribute("teamName").toString();
+		//String teamName = session.getAttribute("teamName").toString();
 		ModelAndView index = new ModelAndView("index");
 		
 		ArrayList<HashMap<String, String>> scoreDetails = new ArrayList<HashMap<String, String>>();
@@ -259,14 +259,14 @@ public class MainController {
 		    	  favouriteRepository.deleteTeamById(user1);
 		      }*/
 	    	  
-	    	  if(user1.equals(teamName)) {
-		    		System.out.println("already selected");
-		    	}
-	    	  else {
+	    	  //if(user1.equals(teamName)) {
+		    	//	System.out.println("already selected");
+		    	//}
+	    	  //else {
 	        user.add(user1);
 	        }
-		      System.out.println("eee");
-	      }
+		  //    System.out.println("eee");
+	      
 	      
 	    
 	     // favouriteRepository.save(user);
